@@ -12,7 +12,9 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!--Particle.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
@@ -21,9 +23,13 @@
     <!--Textillate-->
     <link rel="stylesheet" href="assests/vendore/animate.css">
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <div class="container">
+
+
     <section id="Oval" class="mb-4">
 
         <div class="row">
@@ -42,17 +48,42 @@
                 </div>
 
                 <h5 class="text-light text text-center">Ask me anything</h5>
+
+                <div class="col-md-12 mt-4 pt-4">
+                    <div class="text-center">
+                        <div id="TextInput" class="d-flex">
+
+                            <input type="text" class="input-field" name="chatbox" id="chatbox" placeholder="Type here">
+                            <button id="MicBtn" class="glow-on-hover"><i class="bi bi-mic"></i></button>
+                            <button id="ChatBtn" class="glow-on-hover"><i class="bi bi-chat-dots"></i></button>
+                            <button id="SettingsBtn" class="glow-on-hover"><i class="bi bi-gear-wide-connected"></i></button>
+                            <label for="chatbox"></label>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-1"></div>
         </div>
     </section>
 
+
+    <section id="SiriWave" class="mb-4">
+
+        
+    </section>
+    </div>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     <!--Particle.js-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script src="script.js"></script>
+
+    <!--siriwave-->
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
 
     <!--Texllate-->
     <script src="assests/vendore/jquery.fittext.js"></script>
