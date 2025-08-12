@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JARVIS</title>
     <link rel="shortcut icon" href="assests/images/jarvis.ico" type="image/x-icon">
 
     <!--Jquery-->
@@ -30,7 +30,7 @@
     <div class="container">
 
 
-    <section id="Oval" class="mb-4">
+    <section id="Oval" class="mb-4" >
 
         <div class="row">
             <div class="col-md-1"></div>
@@ -68,11 +68,25 @@
     </section>
 
 
-    <section id="SiriWave" class="mb-4">
+    <section id="SiriWave" class="mb-4" hidden >
 
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center align-items-center" style="height:100vh">
+                        <div class="">
+                            <p class="text-start text-light mb-4 siri-message" style="font-size: 28px;">Hello! I am Jarvis</p>
+                            <div id="siri-container"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     </div>
+
+
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -91,7 +105,8 @@
     <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
 
     <script src="main.js"></script>
-
+    <script src="controller.js"></script>
     <script src="/eel.js"></script>
+
 </body>
 </html>
