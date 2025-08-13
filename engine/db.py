@@ -6,17 +6,17 @@ cursor = con.cursor()
 query = "CREATE TABLE IF NOT EXISTS sys_command(id integer primary key, name VARCHAR(100), path VARCHAR(1000))"
 cursor.execute(query)
 
-# query = "INSERT INTO sys_command VALUES (null,'one note', 'C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.exe')"
-# cursor.execute(query)
-# con.commit()
+#query = "INSERT INTO sys_command VALUES (null,'edge', 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe')"
+#cursor.execute(query)
+#con.commit()
 
 query = "CREATE TABLE IF NOT EXISTS web_command(id integer primary key, name VARCHAR(100), url VARCHAR(1000))"
 cursor.execute(query)
 
-query = "INSERT INTO web_command VALUES (null,'leetcode', 'https://leetcode.com/problemset/')"
+query = "INSERT INTO web_command VALUES (null,'code', 'https://leetcode.com/')"
 cursor.execute(query)
 con.commit()
 
-# query = "INSERT INTO web_command VALUES (null,'youtube', 'https://www.youtube.com/')"
-# cursor.execute(query)
-# con.commit()
+#delete_query = "DELETE FROM web_command WHERE id = ?"
+#cursor.execute(delete_query, (7,))  # 1 is the id you want to delete
+#con.commit()
