@@ -1,35 +1,38 @@
+import os
+from pipes import quote
+import re
+import sqlite3
 import struct
 import subprocess
 import time
+import webbrowser
 from playsound import playsound
 import eel
-import pvporcupine
 import pyaudio
 import pyautogui
-from engine.config import ASSISTANT_NAME
 from engine.command import speak
-import os
+from engine.config import ASSISTANT_NAME
+# Playing assiatnt sound function
 import pywhatkit as kit
-import sqlite3
-import webbrowser
+import pvporcupine
+
 from engine.helper import extract_yt_term, remove_words
-from pipes import quote
+from hugchat import hugchat
 
 con = sqlite3.connect("jarvis.db")
 cursor = con.cursor()
 
-#jarvis-intro-sound
 @eel.expose
-def playAssistentsound():
+def playAssistantSound():
     music_dir = "www\\assests\\audio\\jarvis.mp3"
     playsound(music_dir)
 
+    
 def openCommand(query):
     query = query.replace(ASSISTANT_NAME, "")
     query = query.replace("open", "")
     query.lower()
-    
-    
+
     app_name = query.strip()
 
     if app_name != "":
@@ -60,13 +63,15 @@ def openCommand(query):
                         speak("not found")
         except:
             speak("some thing went wrong")
-    
-        
+
+       
+
 def PlayYoutube(query):
     search_term = extract_yt_term(query)
     speak("Playing "+search_term+" on YouTube")
     kit.playonyt(search_term)
-    
+
+
 def hotword():
     porcupine=None
     paud=None
@@ -104,14 +109,13 @@ def hotword():
             audio_stream.close()
         if paud is not None:
             paud.terminate()
-            
-            
 
-# Find Contacts
+
+
+# find contacts
 def findContact(query):
     
-    
-    words_to_remove = [ASSISTANT_NAME, 'make', 'a', 'to', 'phone', 'call', 'send', 'message', 'wahtsapp', 'video', 'can']
+    words_to_remove = [ASSISTANT_NAME, 'make', 'a', 'to', 'phone', 'call', 'send', 'message', 'wahtsapp', 'video']
     query = remove_words(query, words_to_remove)
 
     try:
@@ -120,6 +124,7 @@ def findContact(query):
         results = cursor.fetchall()
         print(results[0][0])
         mobile_number_str = str(results[0][0])
+
         if not mobile_number_str.startswith('+91'):
             mobile_number_str = '+91' + mobile_number_str
 
@@ -128,9 +133,8 @@ def findContact(query):
         speak('not exist in contacts')
         return 0, 0
     
-    
-#make watsapp function
 def whatsApp(mobile_no, message, flag, name):
+    
 
     if flag == 'message':
         target_tab = 12
@@ -146,9 +150,10 @@ def whatsApp(mobile_no, message, flag, name):
         message = ''
         jarvis_message = "staring video call with "+name
 
+
     # Encode the message for URL
     encoded_message = quote(message)
-
+    print(encoded_message)
     # Construct the URL
     whatsapp_url = f"whatsapp://send?phone={mobile_no}&text={encoded_message}"
 
@@ -167,3 +172,48 @@ def whatsApp(mobile_no, message, flag, name):
 
     pyautogui.hotkey('enter')
     speak(jarvis_message)
+
+# chat bot 
+def chatBot(query):
+    user_input = query.lower()
+    chatbot = hugchat.ChatBot(cookie_path="engine\cookies.json")
+    id = chatbot.new_conversation()
+    chatbot.change_conversation(id)
+    response =  chatbot.chat(user_input)
+    print(response)
+    speak(response)
+    return response
+
+# android automation
+
+def makeCall(name, mobileNo):
+    mobileNo =mobileNo.replace(" ", "")
+    speak("Calling "+name)
+    command = 'adb shell am start -a android.intent.action.CALL -d tel:'+mobileNo
+    os.system(command)
+
+
+# to send message
+def sendMessage(message, mobileNo, name):
+    from engine.helper import replace_spaces_with_percent_s, goback, keyEvent, tapEvents, adbInput
+    message = replace_spaces_with_percent_s(message)
+    mobileNo = replace_spaces_with_percent_s(mobileNo)
+    speak("sending message")
+    goback(4)
+    time.sleep(1)
+    keyEvent(3)
+    # open sms app
+    tapEvents(136, 2220)
+    #start chat
+    tapEvents(819, 2192)
+    # search mobile no
+    adbInput(mobileNo)
+    #tap on name
+    tapEvents(601, 574)
+    # tap on input
+    tapEvents(390, 2270)
+    #message
+    adbInput(message)
+    #send
+    tapEvents(957, 1397)
+    speak("message send successfully to "+name)

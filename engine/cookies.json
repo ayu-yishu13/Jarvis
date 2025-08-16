@@ -1,0 +1,93 @@
+[
+    {
+        "domain": ".grok.com",
+        "expirationDate": 1758882312.356777,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "sso",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiMWY3OTQ3ZjktZDM2Zi00NjAxLTkyYTAtZjAxMTJjMjIzNjUwIn0.DejlakG0dVgJMPZ2S4YGVLSXFTvUutVBvlQ8taEfd-I"
+    },
+    {
+        "domain": ".grok.com",
+        "expirationDate": 1789835924.41342,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_ga",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "GA1.1.491402880.1755275924"
+    },
+    {
+        "domain": ".grok.com",
+        "expirationDate": 1758882312.356972,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "sso-rw",
+        "path": "/",
+        "sameSite": "strict",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiMWY3OTQ3ZjktZDM2Zi00NjAxLTkyYTAtZjAxMTJjMjIzNjUwIn0.DejlakG0dVgJMPZ2S4YGVLSXFTvUutVBvlQ8taEfd-I"
+    },
+    {
+        "domain": ".grok.com",
+        "expirationDate": 1789835924.453028,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_ga_8FEWB057YH",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "GS2.1.s1755275924$o1$g0$t1755275924$j60$l0$h0"
+    },
+    {
+        "domain": "grok.com",
+        "expirationDate": 1786811924,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "i18nextLng",
+        "path": "/",
+        "sameSite": "strict",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "en"
+    },
+    {
+        "domain": ".grok.com",
+        "expirationDate": 1786811973,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "mp_ea93da913ddb66b6372b89d97b1029ac_mixpanel",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "%7B%22distinct_id%22%3A%22dd2a8f10-6e0f-4f3b-a3bb-a4f83e008595%22%2C%22%24device_id%22%3A%22602655cf-2941-4a5b-a6fa-53adaddbfff5%22%2C%22%24initial_referrer%22%3A%22https%3A%2F%2Fgrok.com%2F%3F__cf_chl_tk%3DVtlDEgqJ4_cyV1OFWyMfwFlJvq6HrkIS.J2fFQTa_Tc-1755275914-1.0.1.1-l7h1r4E7kIdS.pwwDSxhUa6LsIHkBBlw5YQh3ClgkX4%22%2C%22%24initial_referring_domain%22%3A%22grok.com%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%2C%22%24user_id%22%3A%22dd2a8f10-6e0f-4f3b-a3bb-a4f83e008595%22%7D"
+    },
+    {
+        "domain": "grok.com",
+        "expirationDate": 1786811974.451984,
+        "hostOnly": true,
+        "httpOnly": false,
+        "name": "stblid",
+        "path": "/",
+        "sameSite": "strict",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "6fec8f27-837f-405d-b1d0-f6e36d731a9f"
+    }
+]
