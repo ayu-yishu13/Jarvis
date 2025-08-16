@@ -1,3 +1,7 @@
 /envjarvis
 /envjarvis311
-
+/__pycache__
+/.vscode
+/
+/jarvis.db
+/contacts.csv
