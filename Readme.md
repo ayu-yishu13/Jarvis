@@ -3,7 +3,7 @@
 > A full working Jarvis built with a Python backend and a modern HTML/CSS/JS frontend. The UI can be hosted on Vercel while the brain runs locally. Clean architecture, easy to extend, and beginner‑friendly to advanced.
 > **Author:** Ayush Kumar Rai (aka *Future Lelouch*)
 
-![Project Banner — replace with your image](docs/1.png)
+(docs/1.png)
 
 <p align="center">
   <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white"></a>
@@ -68,20 +68,22 @@ Use the checklist to reflect your current build. Uncheck items you haven’t ena
 * [x] **Command routing** via Python engine
 * [x] **Local database** (SQLite) to store shortcuts/commands
 * [x] **Modern UI** (HTML/CSS/JS + Bootstrap)
-* [ ] **Wake word** (e.g., “Jarvis”)
-* [ ] **System controls:** open apps, files, websites, volume/brightness
-* [ ] **Search & knowledge:** Wikipedia/Google/YouTube helpers
-* [ ] **Productivity:** notes, reminders, to‑do
-* [ ] **Media:** play/pause, next/prev, local music folder
-* [ ] **Weather/News** (requires API keys)
-* [ ] **Smartphone link** (ADB/Wi‑Fi; optional) — call, message, clipboard
-* [ ] **Computer vision** add‑ons (screenshots, OCR, object detection)
+* [x] **Wake word** (e.g., “Jarvis”)
+* [x] **System controls:** open apps, files, websites, volume/brightness
+* [x] **Search & knowledge:** Wikipedia/Google/YouTube helpers
+* [x] **Productivity:** notes, reminders, to‑do
+* [x] **Media:** play/pause, next/prev, local music folder
+* [x] **Weather/News** (requires API keys)
+* [x] **Smartphone link** (ADB/Wi‑Fi; optional) — call, message, clipboard
+* [x] **Computer vision** add‑ons (screenshots, OCR, object detection)
 
 > Feel free to add/remove blocks depending on your actual feature set.
 
 ---
 
 ## Technology Stack
+
+
 
 **Core**
 
@@ -108,15 +110,10 @@ Use the checklist to reflect your current build. Uncheck items you haven’t ena
 
 ## Screenshots / Demo
 
-Add your screenshots or screen recordings here.
 
-> Put assets in `docs/` or `www/assets/` and reference them below.
-
-| Dashboard                          | Listening                          | Results                            |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![UI 1](docs/screenshots/ui-1.png) | ![UI 2](docs/screenshots/ui-2.png) | ![UI 3](docs/screenshots/ui-3.png) |
-
-**Live UI (optional):** `https://jarvis-ashen-ten.vercel.app/`
+| ![UI 1](docs/2.jpg) | ![UI 2](docs/3.jpg) | ![UI 3](docs/3.jpg) | ![UI 4](docs/4.jpg) | ![UI 5](docs/5.jpg)
+| [UI 6](docs/6.jpg)
+**Live UI :** `https://jarvis-ashen-ten.vercel.app/`
 
 ---
 
