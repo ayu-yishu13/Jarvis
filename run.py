@@ -16,7 +16,7 @@ def listenHotword():
         hotword()
 
 
-    # Start both processes
+# Start both processes
 if __name__ == '__main__':
         p1 = multiprocessing.Process(target=startJarvis)
         p2 = multiprocessing.Process(target=listenHotword)
@@ -30,3 +30,5 @@ if __name__ == '__main__':
             p2.join()
 
         print("system stop")
+        
+        
