@@ -1,9 +1,11 @@
+![Jarvis](www/assests/images/jarvis.ico)
+
 # JARVIS — Your Personal Voice Assistant (Python + Web UI)
 
 > A full working Jarvis built with a Python backend and a modern HTML/CSS/JS frontend. The UI can be hosted on Vercel while the brain runs locally. Clean architecture, easy to extend, and beginner‑friendly to advanced.
 > **Author:** Ayush Kumar Rai (aka *Future Lelouch*)
 
-(docs/1.png)
+![Front](docs/1.png)
 
 <p align="center">
   <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white"></a>
@@ -113,7 +115,9 @@ Use the checklist to reflect your current build. Uncheck items you haven’t ena
 
 | ![UI 1](docs/2.jpg) | ![UI 2](docs/3.jpg) | ![UI 3](docs/3.jpg) | ![UI 4](docs/4.jpg) | ![UI 5](docs/5.jpg)
 | [UI 6](docs/6.jpg)
-**Live UI :** `https://jarvis-ashen-ten.vercel.app/`
+
+
+<h3>**Live UI :**</h3>  `https://jarvis-ashen-ten.vercel.app/`
 
 ---
 
@@ -304,11 +308,11 @@ pyinstaller --noconsole --onefile --add-data "www;www" run.py
 
 ## Roadmap
 
-* [ ] Wake‑word engine (Porcupine/Vosk)
-* [ ] Settings page (hotkeys, voice, theme)
-* [ ] Plugin system for commands
-* [ ] Cross‑platform packaging
-* [ ] Test suite + CI
+* [x] Wake‑word engine (Porcupine/Vosk)
+* [x] Settings page (hotkeys, voice, theme)
+* [x] Plugin system for commands
+* [x] Cross‑platform packaging
+* [x] Test suite + CI
 
 ---
 
@@ -344,9 +348,3 @@ Until then, all rights reserved by the author.
 
 ---
 
-> **How to customize this README**
->
-> * Replace all images under `docs/` with your own screenshots.
-> * Mark feature checkboxes that you’ve completed.
-> * Update the tech stack to match `requirements.txt`.
-> * Add links to demo videos or blog posts.
