@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jarvis-ashen-ten.vercel.app/">🔗 Live UI (Vercel)</a> ·
+  <a href="https://jarvis-eight-pi.vercel.app/">🔗 Live UI (Vercel)</a> ·
   <a href="#features">Features</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#project-structure">Structure</a> ·
